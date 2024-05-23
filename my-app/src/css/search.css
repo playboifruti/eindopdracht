@@ -1,0 +1,141 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+  }
+  .main {
+    margin: 0;
+    padding: 0;
+  }
+  .nav {
+    position: sticky;
+    top: 0;
+    background-color: #E59500;
+    color: #fff;
+    padding-bottom: 5px;
+    border: 1px solid transparent;
+    border-radius: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .navFlex {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    align-items: flex-start;
+    width: 35%;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  .iconButton {
+    margin-top: 20px;
+  
+    width: 75px;
+    text-align: center;
+  }
+  .iconButton a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .navIcons {
+    width: 40px;
+  }
+  #navH {
+    margin-top: 10px;
+    margin-left: 5%;
+  }
+  .searchSection {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #333;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    height: 710px;
+  }
+  form {
+    padding: 5%;
+  }
+  #searchToken{
+    margin: 0;
+    width: calc(75% - 10px);
+    border: 2px solid #fff;
+    background-color: transparent;
+    line-height: 35px;
+    color: #fff;
+    padding-left: 10px;
+    float: left;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  #searchToken:focus {
+    outline: none;
+  }
+  #searchBtn {
+    margin: 0;
+    width: 22%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    line-height: 35px;
+    background-color: #fff;
+    color: #000;
+    float: left;
+    font-size: 16px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  #searchBtn:active {
+    font-size: 14px;
+  }
+
+  .showToken {
+    margin-top: 20px;
+    padding: 5%;
+    color: #fff;
+  }
+  .showToken p {
+    margin-top: 5px;
+  }
+  #tokenName {
+    font-size: 20px;
+    margin: 0;
+  }
+  #tokenPrice {
+    font-size: 35px;
+    margin: 0;
+  }
+  #tokenProcentDif {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .priceUp {
+    background-color: rgb(89, 192, 78);
+    color: #fff;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+  }
+  .priceDown {
+    background-color: rgb(214, 56, 56);
+    color: #fff;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+  }
+  .priceSame {
+    background-color: #555;
+    color: #fff;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+  }
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="nav">
+        <div class="navFlex">
+          <div class="iconButton active">
+              <a href="index.html"><img src="img/home.png" alt="icon" class="navIcons">Home</a>
+          </div>
+          <div class="iconButton">
+            <a href="search.html"><img src="img/search.png" alt="icon" class="navIcons">Search</a>
+          </div>
+          <!-- <div class="iconButton">
+            <a href="portfolio.html"><img src="img/portfolio.png" alt="icon" class="navIcons">Portfolio</a>
+          </div> -->
+        </div>
+        <h1 id="navH">Markets</h1>
+      </div>
+
+      <div class="currencyTable">
+        <table>
+          <tr>
+            <th style="width: 40px;" class="rowLeft">#</th>
+            <th style="width: 100px;" class="rowLeft">Name</th>
+            <th class="rowRight">Price</th>
+            <th class="rowRight">24h.%</th>
+          </tr>
+          <!-- Bitcoin row -->
+          <tr>
+            <td class="rowLeft">1</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/btc.png" alt="btc" class="currencyIcon"><div class="currencyName">BTC</div></td>
+            <td class="rowRight" id="bitcoin-current-price">$loading...</td>
+            <td class="rowRight" id="bitcoin-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Ethereum row -->
+          <tr>
+            <td class="rowLeft">2</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/eth.png" alt="eth" class="currencyIcon"><div class="currencyName">ETH</div></td>
+            <td class="rowRight" id="ethereum-current-price">$loading...</td>
+            <td class="rowRight" id="ethereum-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Polkadot (DOT) row -->
+          <tr>
+            <td class="rowLeft">3</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/dot.png" alt="dot" class="currencyIcon"><div class="currencyName">DOT</div></td>
+            <td class="rowRight" id="polkadot-current-price">$loading...</td>
+            <td class="rowRight" id="polkadot-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Cosmos (ATOM) row -->
+          <tr>
+            <td class="rowLeft">4</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/atom.png" alt="atom" class="currencyIcon"><div class="currencyName">ATOM</div></td>
+            <td class="rowRight" id="cosmos-current-price">$loading...</td>
+            <td class="rowRight" id="cosmos-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- TON row -->
+          <tr>
+            <td class="rowLeft">5</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/ton.png" alt="ton" class="currencyIcon"><div class="currencyName">TON</div></td>
+            <td class="rowRight" id="ton-current-price">$loading...</td>
+            <td class="rowRight" id="ton-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Litecoin (LTC) row -->
+          <tr>
+            <td class="rowLeft">6</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/ltc.png" alt="ltc" class="currencyIcon"><div class="currencyName">LTC</div></td>
+            <td class="rowRight" id="litecoin-current-price">$loading...</td>
+            <td class="rowRight" id="litecoin-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Apt row -->
+          <tr>
+            <td class="rowLeft">7</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/apt.png" alt="apt" class="currencyIcon"><div class="currencyName">APT</div></td>
+            <td class="rowRight" id="aptos-current-price">$loading...</td>
+            <td class="rowRight" id="aptos-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Arb row -->
+          <tr>
+            <td class="rowLeft">8</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/arb.png" alt="arb" class="currencyIcon"><div class="currencyName">ARB</div></td>
+            <td class="rowRight" id="arbitrum-current-price">$loading...</td>
+            <td class="rowRight" id="arbitrum-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Optimism row -->
+          <tr>
+            <td class="rowLeft">9</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/optimism.png" alt="optimism" class="currencyIcon"><div class="currencyName">Optimism</div></td>
+            <td class="rowRight" id="optimism-current-price">$loading...</td>
+            <td class="rowRight" id="optimism-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- StarkNet row -->
+          <tr>
+            <td class="rowLeft">10</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/starknet.png" alt="starknet" class="currencyIcon"><div class="currencyName">StarkNet</div></td>
+            <td class="rowRight" id="starknet-current-price">$loading...</td>
+            <td class="rowRight" id="starknet-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Solana row -->
+          <tr>
+            <td class="rowLeft">11</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/solana.png" alt="solana" class="currencyIcon"><div class="currencyName">Solana</div></td>
+            <td class="rowRight" id="solana-current-price">$loading...</td>
+            <td class="rowRight" id="solana-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Polygon (MATIC) row -->
+          <tr>
+            <td class="rowLeft">12</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/matic.png" alt="matic" class="currencyIcon"><div class="currencyName">MATIC</div></td>
+            <td class="rowRight" id="matic-current-price">$loading...</td>
+            <td class="rowRight" id="matic-price-24h-ago">$loading...</td>
+          </tr>
+          <!-- Chainlink (LINK) row -->
+          <tr>
+            <td class="rowLeft">13</td>
+            <td class="rowLeft currencyNameFlex"><img src="img/tokensImg/chainlink.png" alt="chainlink" class="currencyIcon"><div class="currencyName">Chainlink</div></td>
+            <td class="rowRight" id="chainlink-current-price">$loading...</td>
+            <td class="rowRight" id="chainlink-price-24h-ago">$loading...</td>
+          </tr>
+        
+        </table>
+      </div>
+    </div>
+    <p id="percentage-difference"></p>
+
+    <script src="preload.js"></script>
+    <script src="indexPrices.js"></script>
+  </body>
+</html>

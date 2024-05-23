@@ -1,0 +1,100 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+}
+.main {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: #E59500;
+  color: #fff;
+  padding-bottom: 5px;
+  border: 1px solid transparent;
+  border-radius: none;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.navFlex {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  align-items: flex-start;
+  width: 35%;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+.iconButton {
+  margin-top: 20px;
+
+  width: 75px;
+  text-align: center;
+}
+.iconButton a {
+  color: #fff;
+  text-decoration: none;
+}
+.navIcons {
+  width: 40px;
+}
+#navH {
+  margin-top: 10px;
+  margin-left: 5%;
+}
+.currencyTable {
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+table {
+  width: 95%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+table, th, td {
+  /* border: 1px solid white; */
+}
+tr {
+  height: 50px;
+}
+.rowLeft {
+  line-height: 50px;
+  text-align: left;
+
+}
+.rowRight {
+  text-align: right;
+}
+.currencyIcon {
+  width: 35px;
+  margin: 0;
+}
+.currencyName {
+  margin-left: 20px;
+
+}
+.currencyNameFlex {
+  display: flex;
+  align-items: center;
+}
+.priceUp {
+  color: rgb(0, 255, 13);
+}
+.priceDown {
+  color: rgb(255, 0, 0);
+}
+.priceSame {
+  color: rgb(215, 215, 215);
+}

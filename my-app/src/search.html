@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="css/search.css" />
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="nav">
+        <div class="navFlex">
+          <div class="iconButton active">
+              <a href="index.html"><img src="img/home.png" alt="icon" class="navIcons">Home</a>
+          </div>
+          <div class="iconButton">
+            <a href="search.html"><img src="img/search.png" alt="icon" class="navIcons">Search</a>
+          </div>
+          <!-- <div class="iconButton">
+            <a href="portfolio.html"><img src="img/portfolio.png" alt="icon" class="navIcons">Portfolio</a>
+          </div> -->
+        </div>
+        <h1 id="navH">Search</h1>
+      </div>
+
+      <div class="searchSection">
+        <form action="">
+            <input type="text" name="searchToken" id="searchToken" placeholder="Search token">
+            <input type="submit" name="searchBtn" id="searchBtn" onload="searchToken()" value="Search">
+        </form>
+
+        <div class="showToken">
+            <p id="tokenName"></p>
+            <p id="tokenPrice"></p>
+            <p id="tokenProcentDif" class=""></p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="preload.js"></script>
+    <script src="indexSearchPrices.js"></script>
+  </body>
+</html>
